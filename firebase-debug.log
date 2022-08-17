@@ -1,0 +1,131 @@
+[debug] [2022-08-17T01:40:14.714Z] ----------------------------------------------------------------------
+[debug] [2022-08-17T01:40:14.717Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tiosa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-08-17T01:40:14.717Z] CLI Version:   11.7.0
+[debug] [2022-08-17T01:40:14.717Z] Platform:      win32
+[debug] [2022-08-17T01:40:14.718Z] Node Version:  v14.18.1
+[debug] [2022-08-17T01:40:14.718Z] Time:          Wed Aug 17 2022 02:40:14 GMT+0100 (Horário de Verão Britânico)
+[debug] [2022-08-17T01:40:14.718Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-17T01:40:14.728Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-17T01:40:14.729Z] > authorizing via signed-in user (davi.neves.santos2@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Tiosa\OneDrive\Ambiente de Trabalho\programm\JS\firebase\meh-test
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-08-17T01:42:59.620Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-08-17T01:43:00.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-08-17T01:43:00.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project meh-test-89d1d (meh-test) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-08-17T01:43:02.675Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-08-17T01:43:03.669Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com 200
+[debug] [2022-08-17T01:43:03.669Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-08-17T01:43:03.670Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-08-17T01:43:05.145Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-08-17T01:43:05.146Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-08-17T01:43:15.149Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-08-17T01:43:16.070Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com 200
+[debug] [2022-08-17T01:43:16.071Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-08-17T01:43:16.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meh-test-89d1d [none]
+[debug] [2022-08-17T01:43:16.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meh-test-89d1d 200
+[debug] [2022-08-17T01:43:16.362Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meh-test-89d1d {"projectId":"meh-test-89d1d","projectNumber":"903344881415","displayName":"meh-test","name":"projects/meh-test-89d1d","resources":{"hostingSite":"meh-test-89d1d","storageBucket":"meh-test-89d1d.appspot.com","locationId":"europe-central2"},"state":"ACTIVE","etag":"1_121dcd78-4d49-4f1f-a35f-03ed72a47016"}
+[debug] [2022-08-17T01:43:33.416Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances databaseId=meh-test-89d1d-default-rtdb&validateOnly=true
+[debug] [2022-08-17T01:43:33.417Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2022-08-17T01:43:34.162Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances 200
+[debug] [2022-08-17T01:43:34.162Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances {"name":"projects/903344881415/locations/europe-west1/instances/meh-test-89d1d-default-rtdb","project":"projects/903344881415","databaseUrl":"https://meh-test-89d1d-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2022-08-17T01:43:34.164Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances databaseId=meh-test-89d1d-default-rtdb
+[debug] [2022-08-17T01:43:34.164Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2022-08-17T01:43:34.708Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances 200
+[debug] [2022-08-17T01:43:34.708Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/meh-test-89d1d/locations/europe-west1/instances {"name":"projects/903344881415/locations/europe-west1/instances/meh-test-89d1d-default-rtdb","project":"projects/903344881415","databaseUrl":"https://meh-test-89d1d-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-08-17T01:43:44.258Z] >>> [apiv2][query] GET https://meh-test-89d1d-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2022-08-17T01:43:45.469Z] <<< [apiv2][status] GET https://meh-test-89d1d-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2022-08-17T01:43:45.469Z] <<< [apiv2][body] GET https://meh-test-89d1d-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for meh-test-89d1d-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-08-17T01:43:45.474Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firestore.googleapis.com [none]
+[debug] [2022-08-17T01:43:46.413Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firestore.googleapis.com 200
+[debug] [2022-08-17T01:43:46.413Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/meh-test-89d1d/services/firestore.googleapis.com [omitted]
+[debug] [2022-08-17T01:43:46.413Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/meh-test-89d1d [none]
+[debug] [2022-08-17T01:43:46.826Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/meh-test-89d1d 200
+[debug] [2022-08-17T01:43:46.826Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/meh-test-89d1d {"name":"apps/meh-test-89d1d","id":"meh-test-89d1d","authDomain":"gmail.com","locationId":"europe-central2","codeBucket":"staging.meh-test-89d1d.appspot.com","servingStatus":"SERVING","defaultHostname":"meh-test-89d1d.lm.r.appspot.com","defaultBucket":"meh-test-89d1d.appspot.com","serviceAccount":"meh-test-89d1d@appspot.gserviceaccount.com","gcrDomain":"eu.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-08-17T01:43:46.827Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-08-17T01:43:46.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-17T01:43:46.827Z] > authorizing via signed-in user (davi.neves.santos2@gmail.com)
+[debug] [2022-08-17T01:43:46.827Z] [iam] checking project meh-test-89d1d for permissions ["firebase.projects.get"]
+[debug] [2022-08-17T01:43:46.828Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/meh-test-89d1d:testIamPermissions [none]
+[debug] [2022-08-17T01:43:46.828Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/meh-test-89d1d:testIamPermissions x-goog-quota-user=projects/meh-test-89d1d
+[debug] [2022-08-17T01:43:46.828Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/meh-test-89d1d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-08-17T01:43:47.640Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/meh-test-89d1d:testIamPermissions 200
+[debug] [2022-08-17T01:43:47.640Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/meh-test-89d1d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-08-17T01:45:52.263Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/meh-test-89d1d/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-08-17T01:45:52.265Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/meh-test-89d1d/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-08-17T01:45:52.666Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/meh-test-89d1d/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-08-17T01:45:52.666Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/meh-test-89d1d/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/meh-test-89d1d/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2022-08-17T01:45:52.668Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/meh-test-89d1d/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-08-17T01:45:52.669Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/meh-test-89d1d/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-08-17T01:46:25.216Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-08-17T01:46:25.320Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-08-17T01:46:25.320Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.9.2","browserURL":"https://www.gstatic.com/firebasejs/9.9.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.9.2/firebase.tgz"},"live":{"version":"9.9","browserURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.9.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.9.2/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.9.2/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.9.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.9.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.9.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.9.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.9.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.9.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.9.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.memory.js"}}
+[info] +  Wrote ./public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Tiosa\OneDrive\Ambiente de Trabalho\programm\JS\firebase\meh-test is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=974548219&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-08-17T01:46:41.476Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-08-17T01:46:41.476Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-08-17T01:46:41.798Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-08-17T01:46:41.799Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-08-17T01:46:41.808Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-08-17T01:46:42.121Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-08-17T01:46:42.121Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"TioSam989","id":63099485,"node_id":"MDQ6VXNlcjYzMDk5NDg1","avatar_url":"https://avatars.githubusercontent.com/u/63099485?v=4","gravatar_id":"","url":"https://api.github.com/users/TioSam989","html_url":"https://github.com/TioSam989","followers_url":"https://api.github.com/users/TioSam989/followers","following_url":"https://api.github.com/users/TioSam989/following{/other_user}","gists_url":"https://api.github.com/users/TioSam989/gists{/gist_id}","starred_url":"https://api.github.com/users/TioSam989/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/TioSam989/subscriptions","organizations_url":"https://api.github.com/users/TioSam989/orgs","repos_url":"https://api.github.com/users/TioSam989/repos","events_url":"https://api.github.com/users/TioSam989/events{/privacy}","received_events_url":"https://api.github.com/users/TioSam989/received_events","type":"User","site_admin":false,"name":"Davi Neves","company":null,"blog":"","location":"Portugal","email":null,"hireable":null,"bio":" student ","twitter_username":null,"public_repos":16,"public_gists":0,"followers":1,"following":1,"created_at":"2020-04-03T09:51:49Z","updated_at":"2022-08-16T23:29:53Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":72082,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as TioSam989 
+[info] 
